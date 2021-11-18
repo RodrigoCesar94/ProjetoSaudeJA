@@ -19,7 +19,8 @@ public class QuestionaPaciente extends Paciente  {
 	
 	
 	if(pgt7>=60) {
-	risco = "Grupo de risco para sua idade";
+		
+		
 	}
 
 	if(soma>=2) {

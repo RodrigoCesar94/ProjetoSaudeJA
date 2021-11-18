@@ -62,7 +62,7 @@ public class Paciente implements InterfacePaciente {
 	public String pergunta6() {
 		String nome;
 		System.out.println("Qual seu nome");
-		nome = resposta.next().trim().replace(" ", "");
+		nome = resposta.next().trim();
 		return nome;
 		
 	}

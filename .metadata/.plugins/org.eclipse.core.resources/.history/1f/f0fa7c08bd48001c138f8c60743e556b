@@ -5,36 +5,29 @@ public class QuestionaPaciente extends Paciente  {
 	public static void main(String[] args) {
 		
 		Paciente p1 = new Paciente();
-		int soma = 0;String risco;
+		int soma = 0;int cont;
 	
 	int pgt1 = p1.pergunta1();
 	int pgt2 = p1.pergunta2();
 	int pgt3 = p1.pergunta3();
 	int pgt4 = p1.pergunta4();
+	//while(pgt4 < 0 && pgt4 > 2);
 	int pgt5 = p1.pergunta5();
 	String pgt6 = p1.pergunta6();
 	int pgt7 = p1.pergunta7();
 	
 	soma = pgt1+pgt2+pgt3+pgt4+pgt5;
-	
-	
-	if(pgt7>=60) {
-	risco = "Grupo de risco para sua idade";
-	}
 
 	if(soma>=2) {
-		System.out.println(""
-				+ ""
-				+ "Paciente:"+pgt6+" \nVocê possui os principais sintomas da COVID que o diferem de uma gripe comum, procure "
-				+ "um médico e realize+++ ");
+		System.out.println("+ Você possui os principais sintomas da COVID que o diferem de uma gripe comum, procure "
+				+ "um médico e+++ ");
 	}
 	if(soma==1) {
-		System.out.println("Você possui um sintoma em um Sintoma");
+		System.out.println("Tem um Sintoma");
 	}
-	if(soma<1) {
+	if(soma>=2) {
 		System.out.println("Não tem sintoma");
 	}
-	
 	}
     
 	}
