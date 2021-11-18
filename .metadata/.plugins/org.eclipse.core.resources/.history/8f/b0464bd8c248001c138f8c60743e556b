@@ -61,19 +61,20 @@ public class Paciente implements InterfacePaciente {
 	@Override
 	public String pergunta6() {
 		String nome;
-		System.out.println("Qual seu nome ?");
-		nome = resposta.next();
-		resposta.nextLine();
+		System.out.println("Qual seu nome");
+		nome = resposta.nextLine();
+		System.out.println("");
 		return nome;
 		
 	}
 	@Override
 	public int pergunta7() {
 		int idade;
-		System.out.println("Qual sua idade ?");
+		System.out.println("Qual sua idade");
 		idade = resposta.nextInt();
 		return idade;
 		
-	}		 	
+	}
+		 	
 }
 

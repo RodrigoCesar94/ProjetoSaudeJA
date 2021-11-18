@@ -61,7 +61,7 @@ public class Paciente implements InterfacePaciente {
 	@Override
 	public String pergunta6() {
 		String nome;
-		System.out.println("Qual seu nome ?");
+		System.out.println("Qual seu nome ? \n");
 		nome = resposta.next();
 		resposta.nextLine();
 		return nome;
@@ -70,7 +70,7 @@ public class Paciente implements InterfacePaciente {
 	@Override
 	public int pergunta7() {
 		int idade;
-		System.out.println("Qual sua idade ?");
+		System.out.println("Qual sua idade ? \n");
 		idade = resposta.nextInt();
 		return idade;
 		

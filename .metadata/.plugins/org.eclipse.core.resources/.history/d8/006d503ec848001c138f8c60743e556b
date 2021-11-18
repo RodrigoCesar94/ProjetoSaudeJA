@@ -25,22 +25,20 @@ public class QuestionaPaciente extends Paciente  {
 	}
 
 	if(soma>=2) {
-		System.out.println(pgt6+risco+"\nVocê possui os principais sintomas da COVID que o diferem de uma gripe comum, procure"
+		System.out.println(""
+				+ ""
+				+ "Paciente:"+pgt6+risco+"\nVocê possui os principais sintomas da COVID que o diferem de uma gripe comum, procure"
 				+ " um médico imediatamente. ");
 	}
 	if(soma==1) {
-		System.out.println(pgt6+risco+"\nVocê possui um sintoma dentre os principais que diferem de uma gripe comum. "
-				+ "\nConvém realizar um teste e ajuda médica para tratamento deste sintoma");
+		System.out.println("Paciente: "+pgt6+risco+"\nVocê possui um sintoma dentre os principais que diferem de uma gripo comum. "
+				+ "\nConvém realizar um teste e ajuda médica poara tratamento deste sintoma");
 	}
 	if(soma<1) {
-		System.out.println(pgt6+risco+"Não possui nenhum sintoma. É importante permanecer em casa, e continuar com \nas medidas"
-				+ " de proteção. Use máscara, álcool em gel e vacine-se");
+		System.out.println("Paciente: "+pgt6+risco+" Não possui nenhum sintoma. É importante permanecer em casa, e continuar com \nas medidas"
+				+ "de proteção. Use máscara, álcool em gel e vacine-se");
 	}
-	
-	else {System.out.println("Pode ser que você tenha errado alguma resposta, por favor reinicie o programa e tente novamente.");
-		
-	}
-	System.out.println("\nObrigado por utilizar o SaúdeJA!!");
+	System.out.println("\nObrigado por utilizar o SaudeJA!!");
 	}
     
 	}

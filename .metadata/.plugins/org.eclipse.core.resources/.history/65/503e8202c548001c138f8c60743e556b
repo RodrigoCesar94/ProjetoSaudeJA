@@ -1,0 +1,49 @@
+package br.com.generation.ProjetoSaudeJA;
+
+public class QuestionaPaciente extends Paciente  {
+
+	public static void main(String[] args) {
+		
+		Paciente p1 = new Paciente();
+		int soma = 0;String risco;
+	
+	int pgt1 = p1.pergunta1();
+	int pgt2 = p1.pergunta2();
+	int pgt3 = p1.pergunta3();
+	int pgt4 = p1.pergunta4();
+	int pgt5 = p1.pergunta5();
+	String pgt6 = p1.pergunta6();
+	int pgt7 = p1.pergunta7();
+	
+	soma = pgt1+pgt2+pgt3+pgt4+pgt5;
+	
+	
+	if(pgt7>=60) {
+	risco = "Grupo de risco para sua idade";
+	}
+
+	if(soma>=2) {
+		System.out.println(""
+				+ ""
+				+ "Paciente:"+pgt6+" \nVocê possui os principais sintomas da COVID que o diferem de uma gripe comum, procure "
+				+ "um médico e realize ");
+	}
+	if(soma==1) {
+		System.out.println("Paciente: "+pgt6+"Você possui um sintoma dentre os principais que diferem de uma gripo comum. "
+				+ "\nConvém realizar um teste e ajuda médica poara tratamento deste sintoma");
+	}
+	if(soma<1) {
+		System.out.println("Paciente: "+pgt6+" não possui nenhum sintoma. É importante permanecer em casa, e continuar com as medidas"
+				+ "de proteção. Use máscara, álcool em gel e vacine-se");
+	}
+	System.out.println("\nObrigado por utilizar o SaudeJA!!");
+	}
+    
+	}
+	
+
+	
+		
+	
+
+

@@ -36,10 +36,6 @@ public class QuestionaPaciente extends Paciente  {
 		System.out.println(pgt6+risco+"Não possui nenhum sintoma. É importante permanecer em casa, e continuar com \nas medidas"
 				+ " de proteção. Use máscara, álcool em gel e vacine-se");
 	}
-	
-	else {System.out.println("Pode ser que você tenha errado alguma resposta, por favor reinicie o programa e tente novamente.");
-		
-	}
 	System.out.println("\nObrigado por utilizar o SaúdeJA!!");
 	}
     
