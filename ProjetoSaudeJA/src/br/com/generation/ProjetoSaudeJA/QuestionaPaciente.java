@@ -11,14 +11,16 @@ public class QuestionaPaciente extends Paciente  {
 	int pgt2 = p1.pergunta2();
 	int pgt3 = p1.pergunta3();
 	int pgt4 = p1.pergunta4();
+	//while(pgt4 < 0 && pgt4 > 2);
+	int pgt8 = p1.pergunta8();
 	int pgt5 = p1.pergunta5();
 	String pgt6 = p1.pergunta6();
 	int pgt7 = p1.pergunta7();
 	
-	soma = pgt1+pgt2+pgt3+pgt4+pgt5;
+	//soma = pgt1+pgt2+pgt3+pgt4+pgt5+pgt8;
 	
-	
-	System.out.println("você tem os sintomas principais do COVID");
+
+	//System.out.println("imprimindo variável pgt1: "+pgt3);
 	}
     
 	}

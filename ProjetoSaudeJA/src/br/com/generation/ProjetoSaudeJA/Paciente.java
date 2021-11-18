@@ -23,7 +23,7 @@ public class Paciente implements InterfacePaciente {
 	@Override
 	public int pergunta1() {
 		int pgt1;
-		System.out.println("Você está ou esteve com alteração do olfato ou paladar ? \n1 escolha 0 - SIM | 1 - NÃO");
+		System.out.println("Você está ou esteve com alteração do olfato ou paladar ? \n escolha 1 - SIM | 0 - NÃO");
 		pgt1 = resposta.nextInt();
 		return pgt1;
 	}
@@ -31,30 +31,40 @@ public class Paciente implements InterfacePaciente {
 	@Override
 	public int pergunta2() {
 		int  pgt2;	
-		System.out.println("Você está ou esteve com dor de cabeça ? \n  escolha 0 - SIM | 1 - NÃO");
+		System.out.println("Você está ou esteve com dor de cabeça ? \n  escolha 1 - SIM | 0 - NÃO");
 		pgt2 = resposta.nextInt();
 		return pgt2;
 		
 	}
 	@Override
 	public int pergunta3() {
-		int pgt3;
-		System.out.println("Você está ou esteve com Febre ?  \n escolha 0 - SIM | 1 - NÃO");
+	    int pgt3;
+		System.out.println("Você está ou esteve com febre ?  \n escolha 1 - SIM | 0 - NÃO");
 		pgt3 = resposta.nextInt();
 		return pgt3;
-		
 	}
 	@Override
 	public int pergunta4() {
+		
         int pgt4;
-		System.out.println("Você está ou esteve com Tosse ? \n escolha 0 - SIM | 1 - NÃO");
+		System.out.println("Você está ou esteve com tosse ? \n escolha 1 - SIM | 0 - NÃO");
 		pgt4 = resposta.nextInt();
 		return pgt4;
-    }	
+			
+	}
+	    @Override
+		public int pergunta8() {
+		int pgt8;
+		System.out.println("Sua tosse é seca ou carregada ? \n escolha 0 - Não tive tosse | 1 - Carregada | 2 - Seca");
+		pgt8 = resposta.nextInt();
+		return pgt8;
+		
+		
+	}	
 	@Override
 	public int pergunta5() {
 		int pgt5;
-		System.out.println("Você está ou esteve com Falta de ar ? \n escolha 0 - SIM | 1 - NÃO");
+		System.out.println("Você está ou esteve com Falta de ar ? \n Escolha 1 - SIM | 0 - NÃO");
 		pgt5 = resposta.nextInt();
 		return pgt5;
 	}
@@ -74,6 +84,6 @@ public class Paciente implements InterfacePaciente {
 		return idade;
 		
 	}
-	 	
+		 	
 }
 
