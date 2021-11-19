@@ -6,9 +6,8 @@ public class Paciente implements InterfacePaciente { // implementação dos método
     // declaração de variáveis
 	private String nome;
 	private int   idade;
-	Scanner resposta = new Scanner(System.in); // Criação do Scanner, para leitura do Console.d
+	Scanner resposta = new Scanner(System.in);
 	
-	// criação de getters and setter, encapsulamento.
 	public String getNome() {
 		return nome;
 	}
@@ -21,7 +20,6 @@ public class Paciente implements InterfacePaciente { // implementação dos método
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	//Criação dos métodos.
 	@Override
 	public int pergunta1() {
 		int pgt1;

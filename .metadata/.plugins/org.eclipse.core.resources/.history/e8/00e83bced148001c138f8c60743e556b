@@ -8,8 +8,8 @@ public interface InterfacePaciente {
 	int pergunta4(); // tosse - sim ou não
 	int pergunta5(); // Falta de ar 
 	String pergunta6(); //  nome do paciente
-	int pergunta7(); // idade 
-	int testaResposta(int pgt); // Contra-erro usuário
+	int pergunta7(); // idade
+	int testaResposta(); // Contra-erro usuário
 
 
 }

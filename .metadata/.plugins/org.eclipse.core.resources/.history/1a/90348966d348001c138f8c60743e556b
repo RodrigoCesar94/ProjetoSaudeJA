@@ -20,7 +20,7 @@ public class QuestionaPaciente extends Paciente  {
 	int pgt4 = p1.pergunta4();
 	int pgt5 = p1.pergunta5();
 	
-	// determinação da soma das respostas 0 e 1, das perguntas 1 a 5, relacionadas aos sintomas. 
+	// determinação da soma das respostas 0 e 1
 	soma = pgt1+pgt2+pgt3+pgt4+pgt5;
 	
 	// saída do código
