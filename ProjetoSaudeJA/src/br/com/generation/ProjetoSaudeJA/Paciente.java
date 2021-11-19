@@ -26,44 +26,39 @@ public class Paciente implements InterfacePaciente { // implementação dos método
 	public int pergunta1() {
 		int pgt1;
 		System.out.println("Você está ou esteve com alteração do olfato ou paladar ? \n escolha 1 - SIM | 0 - NÃO");
-		pgt1 = resposta.nextInt();
-		testaResposta(pgt1);
-		return pgt1;
+		pgt1 = resposta.nextInt();		
+		return testaResposta(pgt1);
 	}
 	
 	@Override
 	public int pergunta2() {
 		int  pgt2;	
 		System.out.println("Você está ou esteve com dor de cabeça ? \n  escolha 1 - SIM | 0 - NÃO");
-		pgt2 = resposta.nextInt();
-		testaResposta(pgt2);
-		return pgt2;
+		pgt2 = resposta.nextInt();	
+		return testaResposta(pgt2);
 		
 	}
 	@Override
 	public int pergunta3() {
 	    int pgt3;
 		System.out.println("Você está ou esteve com febre ?  \n escolha 1 - SIM | 0 - NÃO");
-		pgt3 = resposta.nextInt();
-		testaResposta(pgt3);
-		return pgt3;
+		pgt3 = resposta.nextInt();		
+		return testaResposta(pgt3);
 	}
 	@Override
 	public int pergunta4() {
 		
         int pgt4;
 		System.out.println("Você está ou esteve com tosse seca ? \n escolha 1 - SIM | 0 - NÃO");
-		pgt4 = resposta.nextInt();
-		testaResposta(pgt4);
-		return pgt4;			
+		pgt4 = resposta.nextInt();		
+		return testaResposta(pgt4);			
 	}	
 	@Override
 	public int pergunta5() {
 		int pgt5;
 		System.out.println("Você está ou esteve com Falta de ar ? \n Escolha 1 - SIM | 0 - NÃO");
-		pgt5 = resposta.nextInt();
-		testaResposta(pgt5);
-		return pgt5;
+		pgt5 = resposta.nextInt();		
+		return testaResposta(pgt5);
 	}
 	@Override
 	public String pergunta6() {

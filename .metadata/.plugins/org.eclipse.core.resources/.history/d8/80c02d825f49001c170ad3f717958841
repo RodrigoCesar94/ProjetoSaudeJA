@@ -1,0 +1,55 @@
+package br.com.generation.ProjetoSaudeJA;
+
+public class QuestionaPaciente extends Paciente  {
+
+	public static void main(String[] args) {
+		
+		Paciente p1 = new Paciente(); // criação do objeto p1, que herda classe paciente.
+		int soma = 0;String risco = null;//Declaração de variáveis
+	
+		
+	System.out.println("Olá ! 91% das pessoas com COVID apresentam sintomas, com base nos seus simtomas "
+			+ "indicaremos \n o melhor curso de ação para você. Vamos Começar ? \n");// Mensagem inicial
+			
+	//Atribuindo valores as variáveis através de objeto.		
+	String pgt6 = p1.pergunta6(); 
+	int pgt7 = p1.pergunta7();
+	int pgt1 = p1.pergunta1();
+	int pgt2 = p1.pergunta2();
+	int pgt3 = p1.pergunta3();
+	int pgt4 = p1.pergunta4();
+	int pgt5 = p1.pergunta5();
+	
+	// determinação da soma das respostas 0 e 1, das perguntas 1 a 5, relacionadas aos sintomas. 
+	soma = pgt1+pgt2+pgt3+pgt4+pgt5;
+	
+	// saída do código
+	if (pgt7 >= 60) {
+		risco = ", você está no grupo de risco para sua idade | \n ";
+	} else {
+		risco = ", você não está no grupo de risco para sua idade | \n  ";
+	}
+
+	if(soma>=2) {
+		System.out.println(pgt6+risco+"\nVocê possui os principais sintomas da COVID que o diferem de uma gripe comum, procure"
+				+ " um médico imediatamente. ");
+	}
+	if(soma==1) {
+		System.out.println(pgt6+risco+"\nVocê possui um sintoma dentre os principais que diferem de uma gripe comum. "
+				+ "\nConvém realizar um teste e ajuda médica para tratamento deste sintoma");
+	}
+	if(soma<1) {
+		System.out.println(pgt6+risco+"Não possui nenhum sintoma. É importante permanecer em casa, e continuar com \nas medidas"
+				+ " de proteção. Use máscara, álcool em gel e vacine-se");
+	}
+	System.out.println("\nObrigado por utilizar o SaúdeJA!!");
+	}
+    
+	}
+	
+
+	
+		
+	
+
+

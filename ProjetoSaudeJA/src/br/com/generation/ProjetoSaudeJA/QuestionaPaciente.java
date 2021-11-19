@@ -43,7 +43,9 @@ public class QuestionaPaciente extends Paciente  {
 				+ " de proteção. Use máscara, álcool em gel e vacine-se");
 	}
 	System.out.println("\nObrigado por utilizar o SaúdeJA!!");
+	System.out.println(soma);
 	}
+
     
 	}
 	

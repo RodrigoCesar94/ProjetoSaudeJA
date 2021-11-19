@@ -1,0 +1,100 @@
+package br.com.generation.ProjetoSaudeJA;
+
+import java.util.Scanner;
+
+public class Paciente implements InterfacePaciente { // implementação dos métodos presentes na interface.
+    // declaração de variáveis
+	private String nome;
+	private int   idade;
+	Scanner resposta = new Scanner(System.in); // Criação do Scanner, para leitura do Console.d
+	
+	// criação de getters and setter, encapsulamento.
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public int getIdade() {
+		return idade;
+	}
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+	//Criação dos métodos.
+	@Override
+	public int pergunta1() {
+		int pgt1;
+		System.out.println("Você está ou esteve com alteração do olfato ou paladar ? \n escolha 1 - SIM | 0 - NÃO");
+		pgt1 = resposta.nextInt();
+		
+		return testaResposta(pgt1);
+	}
+	
+	@Override
+	public int pergunta2() {
+		int  pgt2;	
+		System.out.println("Você está ou esteve com dor de cabeça ? \n  escolha 1 - SIM | 0 - NÃO");
+		pgt2 = resposta.nextInt();
+		testaResposta(pgt2);
+		return pgt2;
+		
+	}
+	@Override
+	public int pergunta3() {
+	    int pgt3;
+		System.out.println("Você está ou esteve com febre ?  \n escolha 1 - SIM | 0 - NÃO");
+		pgt3 = resposta.nextInt();
+		testaResposta(pgt3);
+		return pgt3;
+	}
+	@Override
+	public int pergunta4() {
+		
+        int pgt4;
+		System.out.println("Você está ou esteve com tosse seca ? \n escolha 1 - SIM | 0 - NÃO");
+		pgt4 = resposta.nextInt();
+		testaResposta(pgt4);
+		return pgt4;			
+	}	
+	@Override
+	public int pergunta5() {
+		int pgt5;
+		System.out.println("Você está ou esteve com Falta de ar ? \n Escolha 1 - SIM | 0 - NÃO");
+		pgt5 = resposta.nextInt();
+		testaResposta(pgt5);
+		return pgt5;
+	}
+	@Override
+	public String pergunta6() {
+		String nome;
+		System.out.println("Qual seu nome ?");
+		nome = resposta.next();
+		resposta.nextLine();
+		return nome;
+		
+	}
+	@Override
+	public int pergunta7() {
+		int idade;
+		System.out.println("Qual sua idade ?");
+		idade = resposta.nextInt();
+		return idade;
+		
+	}
+	@Override
+	public int testaResposta(int pgt) {
+	while(pgt>1||pgt<0) {
+				System.out.println("Erro, digite novamente: ");
+				pgt = resposta.nextInt();
+				
+			}
+			return pgt;
+		  }
+	}
+	
+      
+	
+
+
+
